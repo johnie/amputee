@@ -5,7 +5,10 @@
     "Johnie Hjelm <johnie.hjelm@symbio.com>"
   ],
   "description": "A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.",
-  "main": "dist/amputee.min.js",
+  "main": [
+    "dist/amputee.js",
+    "dist/amputee.min.js"
+  ],
   "moduleType": [
     "amd",
     "es6"
