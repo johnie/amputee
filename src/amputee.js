@@ -1,7 +1,7 @@
 /**
  * amputee.js
  *
- * Copyright © 2015 | Johnie Hjelm <johnie@hjelm.im
+ * Copyright © 2015 | Johnie Hjelm <johnie@hjelm.im>
  */
 
 // Get all amputee elements
