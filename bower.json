@@ -1,0 +1,29 @@
+{
+  "name": "amputee",
+  "version": "1.0.0",
+  "authors": [
+    "Johnie Hjelm <johnie.hjelm@symbio.com>"
+  ],
+  "description": "A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.",
+  "main": "dist/amputee.min.js",
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "keywords": [
+    "web",
+    "components",
+    "framework",
+    "html",
+    "templates"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/johnie/amputee",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
