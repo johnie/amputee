@@ -32,15 +32,15 @@ const httpGet = url => {
  */
 ;(() => {
 
-  for (var i = 0; i < amputee.length; i++) {
+  for ( var i = 0; i < amputee.length; ) {
 
     var src = '';
 
     if ( amputee[i].hasAttribute('src') ) {
-      
+   
       // Append the data to src
       src += httpGet(amputee[i].getAttribute('src'));
-      
+   
       // Create a div for each amputee
       var htmlNode = document.createElement('span');
 

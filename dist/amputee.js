@@ -22,7 +22,7 @@ var httpGet = function httpGet(url) {
 };
 
 (function() {
-  for (var i = 0; i < amputee.length; i++) {
+  for (var i = 0; i < amputee.length; ) {
     var src = "";
     if (amputee[i].hasAttribute("src")) {
       src += httpGet(amputee[i].getAttribute("src"));

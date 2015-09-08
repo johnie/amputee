@@ -1,6 +1,6 @@
 {
   "name": "amputee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.",
   "main": "src/amputee.js",
   "scripts": {
