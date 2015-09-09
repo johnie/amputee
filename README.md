@@ -1,17 +1,6 @@
 # amputee
 
-> A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.
-
-## Examples
-
-To test the examples you have run it with a server. In this example we are using `serve`.
-
-```
-npm install -g serve
-serve .
-```
-
-Go to [http://localhost:3000/examples](http://localhost:3000/examples).
+> A super-small (505 B gzipped), non-dependent JavaScript framework that allows you to slice up your HTML in separate files.
 
 ## Install
 
@@ -45,6 +34,17 @@ $ npm install amputee
 <h1>Hello World</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit…</p>
+```
+
+## Examples
+
+You can't run the examples via the `file://` protocol so you have run it with a server. In this example we are using `serve`.
+
+Go to [http://localhost:3000/examples](http://localhost:3000/examples).
+
+```
+npm install -g serve
+serve .
 ```
 
 ## Contribute
