@@ -3,7 +3,7 @@
  * A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.
  * https://github.com/johnie/amputee#readme
  * @author Johnie Hjelm <johnie@hjelm.im>
- * @version 1.0.0
+ * @version 1.0.1
  * Copyright 2015. MIT licensed.
  */
 "use strict";
