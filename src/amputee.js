@@ -32,14 +32,14 @@ const httpGet = url => {
  */
 ;(() => {
 
-  for ( var i = 0; i < amputee.length; ) {
+  while ( amputee.length ) {
 
     var src = '';
 
-    if ( amputee[i].hasAttribute('src') ) {
+    if ( amputee[0].hasAttribute('src') ) {
    
       // Append the data to src
-      src += httpGet(amputee[i].getAttribute('src'));
+      src += httpGet(amputee[0].getAttribute('src'));
    
       // Create a div for each amputee
       var htmlNode = document.createElement('span');
@@ -48,10 +48,10 @@ const httpGet = url => {
       htmlNode.innerHTML = src;
 
       // Replace htmlNode with amputee response
-      amputee[i].parentNode.replaceChild(htmlNode, amputee[i]);
+      amputee[0].parentNode.replaceChild(htmlNode, amputee[0]);
 
     } else {
-      throw `amputee: ${amputee[i]} has no src location.`;
+      throw `amputee: ${amputee[0]} has no src location.`;
     }
 
   }

@@ -3,7 +3,7 @@
  * A super-small, non-dependent JavaScript framework that allows you to slice up your HTML in separate files.
  * https://github.com/johnie/amputee#readme
  * @author Johnie Hjelm <johnie@hjelm.im>
- * @version 1.0.1
+ * @version 1.0.2
  * Copyright 2015. MIT licensed.
  */
 "use strict";
@@ -22,15 +22,15 @@ var httpGet = function httpGet(url) {
 };
 
 (function() {
-  for (var i = 0; i < amputee.length; ) {
+  while (amputee.length) {
     var src = "";
-    if (amputee[i].hasAttribute("src")) {
-      src += httpGet(amputee[i].getAttribute("src"));
+    if (amputee[0].hasAttribute("src")) {
+      src += httpGet(amputee[0].getAttribute("src"));
       var htmlNode = document.createElement("span");
       htmlNode.innerHTML = src;
-      amputee[i].parentNode.replaceChild(htmlNode, amputee[i]);
+      amputee[0].parentNode.replaceChild(htmlNode, amputee[0]);
     } else {
-      throw "amputee: " + amputee[i] + " has no src location.";
+      throw "amputee: " + amputee[0] + " has no src location.";
     }
   }
 })();
